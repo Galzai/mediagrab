@@ -1,0 +1,18 @@
+Important (for working proof of concept):
+-Create search function by media details (show name , episode , etc...)
+-Add option to grab magnet or download torrent.
+
+Features:
+-More scrapers (or try to implement grabbing torrent data by magnet, will make it possible for user added websites easily).
+-Add paramaters to FilterData (codec, uploader, etc).
+-Add library for saving latest viewed episode.
+-Add function to look for latest episode released for show.
+-Add media type selection.
+-Add automation for new episode release (e.g if show is released every monday check overy tuesday for torrent.
+-Add option to select sites to try and grab media from, check for duplicate results (via identical magnet link).
+-Add CLI.
+-Add GUI.
+
+Optional (too much of a noob to implement i guess):
+-Remove external torrenting software dependency.
+
