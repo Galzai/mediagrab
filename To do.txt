@@ -16,3 +16,6 @@ Features:
 Optional (too much of a noob to implement i guess):
 -Remove external torrenting software dependency.
 
+
+Fixes:
+-latest episode for shows that ended.
