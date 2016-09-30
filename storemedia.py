@@ -20,6 +20,7 @@ def store_show(info):
         file = open('myshows.txt', 'wb')
 
     try:
+        file = open('myshows.txt', 'rb')
         storedshows = pickle.load(file)
     except EOFError:
         file = open('myshows.txt', 'wb')
@@ -54,9 +55,11 @@ def remove_show(title):
         pickle.dump(updatedshows,file)
         file.close()
         print 'Show removed!'
+    except IOError:
+        print "No shows stored found"
 
 
-   # Searching the next episode for all episodes in myshows.txt.
+# Searching the next episode for all episodes in myshows.txt.
 def grab_latest():
     file=open('myshows.txt','rb')
     shows=pickle.load(file)
@@ -83,5 +86,9 @@ def grab_latest():
             medianame+=' ' + show['quality']
         if show.has_key('resolution'):
             medianame+=' '+ show['resolution']
-        episodegrab.grabepis
+        episodegrab.grabepisode(medianame)
+
+
+
+
 
